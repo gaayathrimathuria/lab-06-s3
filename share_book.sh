@@ -2,8 +2,7 @@
 set -euo pipefail
 
 if (($# < 3)); then #usage message
-    echo "Usage: $0 <book_url> <bucket> <expires_in_seconds>" >&2
-    echo "Example: $0 https://www.gutenberg.org/cache/epub/1342/pg1342.txt secret-kmd4af 604800"
+    echo "Usage: $0 <book_url> <bucket-name> <seconds-until-expiration>" >&2
     exit 1
 fi
 
